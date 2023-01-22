@@ -1,8 +1,8 @@
 <%@ Master Language="C#" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="DXWebApp_EVENTOS.MainMaster" %>
 
 <%-- DXCOMMENT: Page Main.master is a master page that contains central area layout --%>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    
         <dx:ASPxPanel ID="LeftPane" runat="server" FixedPosition="WindowLeft" ClientInstanceName="leftPane" CssClass="leftPane" Collapsible="true">
             <SettingsAdaptivity CollapseAtWindowInnerWidth="1023" />
             <Styles>
@@ -11,10 +11,28 @@
             <PanelCollection>
                 <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
                         <div class="leftPanel">
-                            <%-- DXCOMMENT: Configure the left panel's ASPxNavBar --%>
-<dx:ASPxNavBar ID="ASPxNavBar1" runat="server" AutoCollapse="True" EnableAnimation="True" Width="100%" DataSourceID="XmlDataSourceLeft">
+                            <%-- DXCOMMENT: Configure the left panel's ASPxNavBar DataSourceID="XmlDataSourceLeft" --%>
+<dx:ASPxNavBar ID="ASPxNavBar1" runat="server" AutoCollapse="True" EnableAnimation="True" Width="100%" OnItemClick="ASPxNavBar1_ItemClick">
     <Border BorderWidth="0px" />
     <Paddings Padding="0px" />
+    <ClientSideEvents ItemClick="function(s, e) 
+                                    {
+                                        e.processOnServer = false;
+
+                                        if (e.item.name == 'dxPopUpEventoNuevo')  { dxPopUpEventoNuevo.Show(); }
+                                        else if (e.item.name == 'dxPopUpEventoModificar')  { dxPopUpEventoModificar.Show(); }
+                                        else if (e.item.name == 'dxPopUpEventoEliminar')  { dxPopUpEventoEliminar.Show(); }
+                                        else { e.processOnServer = true; }                
+                                    }"/>
+    <Groups>
+                 <dx:NavBarGroup Text="Plataforma">
+                     <Items>
+                         <dx:NavBarItem Text="Nuevo Evento" Name="dxPopUpEventoNuevo"></dx:NavBarItem>
+                         <dx:NavBarItem Text="Modificar Evento" Name="dxPopUpEventoModificar"></dx:NavBarItem>
+                         <dx:NavBarItem Text="Eliminar Evento" Name="dxPopUpEventoEliminar"></dx:NavBarItem>
+                     </Items>
+                 </dx:NavBarGroup>
+             </Groups>
 </dx:ASPxNavBar>
 
                         </div>
@@ -32,5 +50,40 @@
 <asp:XmlDataSource ID="XmlDataSourceLeft" runat="server" DataFile="~/App_Data/SideMenu.xml"
     XPath="/menu/*"></asp:XmlDataSource>
 
+    <%--Popup Control para eventos Nuevos--%>
+    <dx:ASPxPopupControl ID="dxPopUpEventoNuevo" runat="server" AllowDragging="True" ClientInstanceName="dxPopUpEventoNuevo" CloseAction="CloseButton" EnableViewState="False" Modal="true"
+        Height="0px" PopupAnimationType="Slide" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Width="0px" HeaderText="Nuevo Evento">
+        <SettingsAdaptivity Mode="Always" VerticalAlign="WindowCenter" MaxWidth="700px" />
+         <ContentCollection>
+            <dx:PopupControlContentControl runat="server">
+
+            </dx:PopupControlContentControl>
+
+         </ContentCollection>
+    </dx:ASPxPopupControl>
+
+    <%--Popup Control para eventos a Modificar--%>
+    <dx:ASPxPopupControl ID="dxPopUpEventoModificar" runat="server" AllowDragging="True" ClientInstanceName="dxPopUpEventoModificar" CloseAction="CloseButton" EnableViewState="False" Modal="true"
+        Height="0px" PopupAnimationType="Slide" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Width="0px" HeaderText="Modificar Evento">
+        <SettingsAdaptivity Mode="Always" VerticalAlign="WindowCenter" MaxWidth="700px" />
+         <ContentCollection>
+            <dx:PopupControlContentControl runat="server">
+
+            </dx:PopupControlContentControl>
+
+         </ContentCollection>
+    </dx:ASPxPopupControl>
+
+    <%--Popup Control para eventos a Eliminar--%>
+    <dx:ASPxPopupControl ID="dxPopUpEventoEliminar" runat="server" AllowDragging="True" ClientInstanceName="dxPopUpEventoEliminar" CloseAction="CloseButton" EnableViewState="False" Modal="true"
+        Height="0px" PopupAnimationType="Slide" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Width="0px" HeaderText="Eliminar Evento">
+        <SettingsAdaptivity Mode="Always" VerticalAlign="WindowCenter" MaxWidth="700px" />
+         <ContentCollection>
+            <dx:PopupControlContentControl runat="server">
+
+            </dx:PopupControlContentControl>
+
+         </ContentCollection>
+    </dx:ASPxPopupControl>
     
 </asp:Content>

@@ -10,5 +10,10 @@ namespace DXWebApp_EVENTOS {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+
+        protected void ASPxNavBar1_ItemClick(object source, DevExpress.Web.NavBarItemEventArgs e)
+        {
+
+        }
     }
 }
