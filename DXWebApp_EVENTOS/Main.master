@@ -1,6 +1,7 @@
 <%@ Master Language="C#" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="DXWebApp_EVENTOS.MainMaster" %>
 
 <%-- DXCOMMENT: Page Main.master is a master page that contains central area layout --%>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
         <dx:ASPxPanel ID="LeftPane" runat="server" FixedPosition="WindowLeft" ClientInstanceName="leftPane" CssClass="leftPane" Collapsible="true">
             <SettingsAdaptivity CollapseAtWindowInnerWidth="1023" />
@@ -22,7 +23,7 @@
         </dx:ASPxPanel>
 
         <div class="contentPane">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />            
         </div>
             
 

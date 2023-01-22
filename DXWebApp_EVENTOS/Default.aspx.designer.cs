@@ -11,5 +11,14 @@ namespace DXWebApp_EVENTOS {
     
     
     public partial class _Default {
+        
+        /// <summary>
+        /// ASPxCalendar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxCalendar ASPxCalendar1;
     }
 }
