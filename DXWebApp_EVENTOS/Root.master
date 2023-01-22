@@ -22,7 +22,7 @@
                 <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
                         <div class="headerTop">
                             <div class="templateTitle">
-                                <a id="TitleLink" href="~/" runat="server">Project Title</a>
+                                <a id="TitleLink" href="~/" runat="server">Control de Eventos RTG</a>
                             </div>
                             <div class="loginControl">
                                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">

@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <menu>
-  <group Text="Platform">
-    <item Text="Windows" />
-    <item Text="Linux" />
-    <item Text="Mac OS" />
+  <group Text="Platforma">
+    <item Text="Nuevo Evento" />
+    <item Text="Modificar Evento" />
+    <item Text="Eliminar Evento" />
   </group>
+  <!--
   <group Text="SQL Server">
     <item Text="SQL Server 2005" />
     <item Text="SQL Server 2008" />
@@ -24,4 +25,5 @@
     <item Text="Java" />
     <item Text="PHP" />
   </group>
+  -->
 </menu>

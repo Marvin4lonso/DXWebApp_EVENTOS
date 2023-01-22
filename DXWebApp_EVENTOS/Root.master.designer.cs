@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DXWebApp_EVENTOS  {
+namespace DXWebApp_EVENTOS {
     
     
     public partial class RootMaster {
@@ -58,6 +58,15 @@ namespace DXWebApp_EVENTOS  {
         protected global::System.Web.UI.WebControls.LoginView HeadLoginView;
         
         /// <summary>
+        /// HeaderMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxMenu HeaderMenu;
+        
+        /// <summary>
         /// MainPane control.
         /// </summary>
         /// <remarks>
@@ -92,5 +101,14 @@ namespace DXWebApp_EVENTOS  {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxLabel ASPxLabel2;
+        
+        /// <summary>
+        /// XmlDataSourceHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSourceHeader;
     }
 }

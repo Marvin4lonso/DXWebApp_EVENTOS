@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DXWebApp_EVENTOS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("IT Broadcast")]
 [assembly: AssemblyProduct("DXWebApp_EVENTOS")]
 [assembly: AssemblyCopyright("Copyright ? 2023")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("IT Broadcast")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

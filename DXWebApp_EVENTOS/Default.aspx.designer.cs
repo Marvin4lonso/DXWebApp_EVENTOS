@@ -10,6 +10,6 @@
 namespace DXWebApp_EVENTOS {
     
     
-    public partial class Default {
+    public partial class _Default {
     }
 }
