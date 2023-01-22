@@ -272,3 +272,15 @@ C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\obj\De
 C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\obj\Debug\DXWebApp_EVENTOS.csproj.CopyComplete
 C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\obj\Debug\DXWebApp_EVENTOS.dll
 C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\obj\Debug\DXWebApp_EVENTOS.pdb
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\DevExpress.Web.ASPxScheduler.v17.2.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\DevExpress.XtraScheduler.v17.2.Core.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\DevExpress.Web.ASPxScheduler.v17.2.xml
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\DevExpress.XtraScheduler.v17.2.Core.xml
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\de\DevExpress.Web.ASPxScheduler.v17.2.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\es\DevExpress.Web.ASPxScheduler.v17.2.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\ja\DevExpress.Web.ASPxScheduler.v17.2.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\ru\DevExpress.Web.ASPxScheduler.v17.2.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\de\DevExpress.XtraScheduler.v17.2.Core.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\es\DevExpress.XtraScheduler.v17.2.Core.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\ja\DevExpress.XtraScheduler.v17.2.Core.resources.dll
+C:\Users\JAVIER OSORIO\Documents\GitHub\DXWebApp_EVENTOS\DXWebApp_EVENTOS\bin\ru\DevExpress.XtraScheduler.v17.2.Core.resources.dll
