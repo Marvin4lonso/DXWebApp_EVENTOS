@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="DXWebApp_EVENTOS.Global_asax" Language="C#" %>
