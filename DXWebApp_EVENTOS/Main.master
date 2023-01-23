@@ -56,7 +56,54 @@
         <SettingsAdaptivity Mode="Always" VerticalAlign="WindowCenter" MaxWidth="700px" />
          <ContentCollection>
             <dx:PopupControlContentControl runat="server">
+                <div class="padding">
 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Ingresar nuevo evento</h2>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblTitulo" runat="server" Text="Nombre del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-contol"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblFecha" runat="server" Text="Fecha del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="TextBox1" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblPersona1" runat="server" Text="Nombre del camarografo" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="txtCamara" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblPersona2" runat="server" Text="Nombre del reportero" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <asp:Label ID="lblAuto" runat="server" Text="Placa del Vehiculo" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+
+                </div>
             </dx:PopupControlContentControl>
 
          </ContentCollection>
