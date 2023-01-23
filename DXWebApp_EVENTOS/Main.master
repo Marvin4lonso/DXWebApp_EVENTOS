@@ -103,6 +103,19 @@
                         </div>
                     </div>
 
+                    <div class="card-footer">
+                        <dx:ASPxButton ID="dxBtnAgregar" 
+                            runat="server" 
+                            Text="Agregar" 
+                            AutoPostBack="false" 
+                            Font-Bold="true" 
+                            Font-Size="Medium" 
+                            UseSubmitBehavior="false">
+
+                        </dx:ASPxButton>
+
+                    </div>
+
                 </div>
             </dx:PopupControlContentControl>
 
