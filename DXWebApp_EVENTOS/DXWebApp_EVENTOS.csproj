@@ -189,7 +189,9 @@
     <Content Include="Root.master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\css\.DS_Store" />
     <Content Include="Content\css\bootstrap.min.css.map" />
     <Content Include="Content\fonts\.DS_Store" />
@@ -417,6 +419,9 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\Dao\ClsConexion.cs" />
+    <Content Include="App_Code\Dao\ClsDataLayer.cs" />
+    <Content Include="App_Code\Dao\Mantenimiento\ClsDatoPersonal.cs" />
     <Compile Include="App_Code\Models\ClsAsignacionVehiculo.cs" />
     <Compile Include="App_Code\Models\ClsEvento.cs" />
     <Compile Include="App_Code\Models\ClsEstadoEvento.cs" />
@@ -424,6 +429,8 @@
     <Compile Include="App_Code\Models\ClsPersonalEvento.cs" />
     <Compile Include="App_Code\Models\ClsRol.cs" />
     <Compile Include="App_Code\Models\ClsVehiculo.cs" />
+    <Compile Include="App_Code\Utilidades\ClsController.cs" />
+    <Compile Include="App_Code\Utilidades\ClsErrorHandler.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Default.aspx.cs">
@@ -474,6 +481,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
