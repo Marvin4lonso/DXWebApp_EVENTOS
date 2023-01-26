@@ -11,6 +11,7 @@ namespace DXWebApp_EVENTOS {
     
     
     public partial class _Default {
+<<<<<<< HEAD
         
         /// <summary>
         /// ASPxScheduler1 control.
@@ -38,5 +39,7 @@ namespace DXWebApp_EVENTOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxScheduler.ASPxDateNavigator ASPxDateNavigator1;
+=======
+>>>>>>> 32fe75e84e395a824f47d37b9cce5ca24c7cdf14
     }
 }
