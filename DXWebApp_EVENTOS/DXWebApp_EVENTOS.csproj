@@ -416,9 +416,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\Models\ClsAsignacionVehiculo.cs" />
+    <Compile Include="App_Code\Models\ClsEvento.cs" />
+    <Compile Include="App_Code\Models\ClsEstadoEvento.cs" />
     <Compile Include="App_Code\Models\ClsPersonal.cs" />
-    <Content Include="App_Code\Models\ClsPersonalEvento.cs" />
+    <Compile Include="App_Code\Models\ClsPersonalEvento.cs" />
     <Compile Include="App_Code\Models\ClsRol.cs" />
+    <Compile Include="App_Code\Models\ClsVehiculo.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Default.aspx.cs">
