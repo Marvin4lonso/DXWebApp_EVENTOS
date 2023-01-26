@@ -9,5 +9,31 @@ namespace DXWebApp_EVENTOS.App_Code.Models
     {
         private int idPersonal;
         private int idEvento;
+
+        public int IdPersonal
+        {
+            get
+            {
+                return idPersonal;
+            }
+
+            set
+            {
+                idPersonal = value;
+            }
+        }
+
+        public int IdEvento
+        {
+            get
+            {
+                return idEvento;
+            }
+
+            set
+            {
+                idEvento = value;
+            }
+        }
     }
 }

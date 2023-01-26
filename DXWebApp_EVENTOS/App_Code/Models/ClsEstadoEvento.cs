@@ -9,5 +9,31 @@ namespace DXWebApp_EVENTOS.App_Code.Models
     {
         private int idEstado;
         private string descrip;
+
+        public int IdEstado
+        {
+            get
+            {
+                return idEstado;
+            }
+
+            set
+            {
+                idEstado = value;
+            }
+        }
+
+        public string Descrip
+        {
+            get
+            {
+                return descrip;
+            }
+
+            set
+            {
+                descrip = value;
+            }
+        }
     }
 }

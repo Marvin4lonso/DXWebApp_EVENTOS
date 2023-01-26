@@ -9,5 +9,26 @@ namespace DXWebApp_EVENTOS.App_Code.Models
     {
         private readonly int idRol;
         private string descrip;
+
+        public int IdRol
+        {
+            get
+            {
+                return idRol;
+            }
+        }
+
+        public string Descrip
+        {
+            get
+            {
+                return descrip;
+            }
+
+            set
+            {
+                descrip = value;
+            }
+        }
     }
 }
