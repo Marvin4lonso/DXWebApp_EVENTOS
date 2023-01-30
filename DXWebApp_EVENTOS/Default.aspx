@@ -154,7 +154,15 @@
                     </div>
 
                     <div class="form-group">
-                        <asp:Label ID="lblFecha" runat="server" Text="Fecha del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <asp:Label ID="lblDescrip" runat="server" Text="Descripcion del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="TextBox1" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="170px"></dx:ASPxTextBox>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblFechaIni" runat="server" Text="Fecha inicial del Evento" CssClass="control-label col-ms-2"></asp:Label>
                         <div class="col-sm-10">
                             <%--<asp:TextBox ID="TextBox1" runat="server" CssClass="form-contol"></asp:TextBox>--%>
                             <%--<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>--%>
@@ -164,26 +172,19 @@
                     </div>
 
                     <div class="form-group">
-                        <asp:Label ID="lblPersona1" runat="server" Text="Nombre del camarografo" CssClass="control-label col-ms-2"></asp:Label>
+                        <asp:Label ID="lblFechaFin" runat="server" Text="Fecha final del Evento" CssClass="control-label col-ms-2"></asp:Label>
                         <div class="col-sm-10">
-                            <%--<asp:TextBox ID="txtCamara" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                            <%--<asp:TextBox ID="TextBox1" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <%--<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>--%>
+                            <dx:ASPxDateEdit ID="ASPxDateEdit1" runat="server" ClientInstanceName="IDDate"></dx:ASPxDateEdit>
+                            <dx:ASPxTimeEdit ID="ASPxTimeEdit1" runat="server" ClientInstanceName="IDTime" EditFormatString="hh:mm tt"></dx:ASPxTimeEdit>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <asp:Label ID="lblPersona2" runat="server" Text="Nombre del reportero" CssClass="control-label col-ms-2"></asp:Label>
+                        <asp:Label ID="lblEstado" runat="server" Text="Estado del Evento" CssClass="control-label col-ms-2"></asp:Label>
                         <div class="col-sm-10">
-                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
-                        </div>
-                    </div>
-
-                     <div class="form-group">
-                        <asp:Label ID="lblAuto" runat="server" Text="Placa del Vehiculo" CssClass="control-label col-ms-2"></asp:Label>
-                        <div class="col-sm-10">
-                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+                            <dx:ASPxComboBox ID="ASPxComboBox1" runat="server" ValueType="System.String"></dx:ASPxComboBox>
                         </div>
                     </div>
 
