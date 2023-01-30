@@ -18,14 +18,22 @@
 
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            timeZone: 'local',
             initialView: 'dayGridMonth',
             locale: 'es',
             headerToolbar: {
               left: 'prev,next today',
               center: 'title',
-              right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            }
+              right: 'dayGridMonth, timeGridWeek, timeGridDay'
+            },
+            dateClick: function (info) {
+                //alert('Fecha: ' + info.dateStr);
+                dxPopUp.Show();
+                IDDate.Date = DateTime.Now;
+
+            },
+            eventLimit: true // allow "more" link when too many events
         });
         calendar.render();
       });
@@ -123,12 +131,79 @@
             return strTime;
         }
     </script>--%>
-    <%--<dxwschs:ASPxScheduler ID="ASPxScheduler1" runat="server">
-        <Views>
-            <WeekView Enabled="false"></WeekView>
-            <FullWeekView Enabled="true">
-            </FullWeekView>
-        </Views>
 
-    </dxwschs:ASPxScheduler>--%>
+    <%--Popup Control para eventos Nuevos--%>
+    <dx:ASPxPopupControl ID="dxPopUp" runat="server" AllowDragging="True" ClientInstanceName="dxPopUp" CloseAction="CloseButton" EnableViewState="False" Modal="true"
+        Height="0px" PopupAnimationType="Slide" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Width="0px" HeaderText="Evento Asignacion">
+        <SettingsAdaptivity Mode="Always" VerticalAlign="WindowCenter" MaxWidth="700px" />
+         <ContentCollection>
+            <dx:PopupControlContentControl runat="server">
+                <div class="padding">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Ingresar nuevo evento</h2>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblTitulo" runat="server" Text="Nombre del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-contol"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblFecha" runat="server" Text="Fecha del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="TextBox1" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <%--<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>--%>
+                            <dx:ASPxDateEdit ID="IDDate" runat="server" ClientInstanceName="IDDate"></dx:ASPxDateEdit>
+                            <dx:ASPxTimeEdit ID="IDTime" runat="server" ClientInstanceName="IDTime" EditFormatString="hh:mm tt"></dx:ASPxTimeEdit>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblPersona1" runat="server" Text="Nombre del camarografo" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="txtCamara" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblPersona2" runat="server" Text="Nombre del reportero" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <asp:Label ID="lblAuto" runat="server" Text="Placa del Vehiculo" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
+                            <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <dx:ASPxButton ID="dxBtnAgregar" 
+                            runat="server" 
+                            Text="Agregar" 
+                            AutoPostBack="false" 
+                            Font-Bold="true" 
+                            Font-Size="Medium" 
+                            UseSubmitBehavior="false">
+
+                        </dx:ASPxButton>
+
+                    </div>
+
+                </div>
+            </dx:PopupControlContentControl>
+
+         </ContentCollection>
+    </dx:ASPxPopupControl>
+    
 </asp:Content>

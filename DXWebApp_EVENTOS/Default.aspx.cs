@@ -13,6 +13,7 @@ namespace DXWebApp_EVENTOS {
             //ASPxCalendar1.DayStyle.HorizontalAlign = HorizontalAlign.Left;
             //ASPxCalendar1.DayStyle.VerticalAlign = VerticalAlign.Top;
             //ASPxCalendar1.DayOtherMonthStyle.BackColor = System.Drawing.Color.Cornsilk;
+            
         }
 
         protected void ASPxCalendar1_SelectionChanged(object sender, EventArgs e)
