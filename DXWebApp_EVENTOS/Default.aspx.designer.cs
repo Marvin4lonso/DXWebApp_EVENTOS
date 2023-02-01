@@ -130,6 +130,24 @@ namespace DXWebApp_EVENTOS {
         protected global::DevExpress.Web.ASPxButton dxBtnAgregar;
         
         /// <summary>
+        /// Control dxBtnModificar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton dxBtnModificar;
+        
+        /// <summary>
+        /// Control dxBtnEliminar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton dxBtnEliminar;
+        
+        /// <summary>
         /// Control dxBtnModificarEvento.
         /// </summary>
         /// <remarks>

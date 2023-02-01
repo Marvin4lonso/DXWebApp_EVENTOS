@@ -101,6 +101,24 @@
                             UseSubmitBehavior="false">
 
                         </dx:ASPxButton>
+                        <dx:ASPxButton ID="dxBtnModificar" 
+                            runat="server" 
+                            Text="Modificar Personal" 
+                            AutoPostBack="false" 
+                            Font-Bold="true" 
+                            Font-Size="Medium" 
+                            UseSubmitBehavior="false">
+
+                        </dx:ASPxButton>
+                        <dx:ASPxButton ID="dxBtnEliminar" 
+                            runat="server" 
+                            Text="Eliminar Personal" 
+                            AutoPostBack="false" 
+                            Font-Bold="true" 
+                            Font-Size="Medium" 
+                            UseSubmitBehavior="false">
+
+                        </dx:ASPxButton>
                         <dx:ASPxButton ID="dxBtnModificarEvento" 
                             runat="server" 
                             Text="Modificar Evento" 
