@@ -1,0 +1,8 @@
+Modulos de Nuevo, Modificar y Eliminar Evento en el menu:
+Se guardarán los datos de los nuevos eventos (nombre, descripcion, fecha inicial, fecha final y estado)
+
+Luego se mostrarán los eventos en el calendario, luego se sigue este proceso:
+
+1. Al darle click al evento en el calendario deberá de mostrar si hay asignación de personal,
+2. Si no hay asignacion, en el mismo formulario se asignará el personal y el vehiculo
+3. Si se necesita modificar o eliminar asignacion, en el mismo formulario aparecerá los botones para hacerlo

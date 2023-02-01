@@ -60,48 +60,47 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Ingresar nuevo evento</h2>
+                            <h2>Ingresar Nuevo Evento</h2>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <asp:Label ID="lblTitulo" runat="server" Text="Nombre del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <asp:Label ID="lblNombre" runat="server" Text="Nombre:" CssClass="control-label col-ms-2"></asp:Label>
                         <div class="col-sm-10">
-                            <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-contol"></asp:TextBox>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <asp:Label ID="lblFecha" runat="server" Text="Fecha del Evento" CssClass="control-label col-ms-2"></asp:Label>
-                        <div class="col-sm-10">
-                            <%--<asp:TextBox ID="TextBox1" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <asp:Label ID="lblPersona1" runat="server" Text="Nombre del camarografo" CssClass="control-label col-ms-2"></asp:Label>
-                        <div class="col-sm-10">
-                            <%--<asp:TextBox ID="txtCamara" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <asp:Label ID="lblPersona2" runat="server" Text="Nombre del reportero" CssClass="control-label col-ms-2"></asp:Label>
-                        <div class="col-sm-10">
-                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
+                            <asp:TextBox ID="txtNombre" runat="server" CssClass="form-contol"></asp:TextBox>
                         </div>
                     </div>
 
                      <div class="form-group">
-                        <asp:Label ID="lblAuto" runat="server" Text="Placa del Vehiculo" CssClass="control-label col-ms-2"></asp:Label>
+                        <asp:Label ID="lblDescripcion" runat="server" Text="Descripcion:" CssClass="control-label col-ms-2"></asp:Label>
                         <div class="col-sm-10">
-                            <%--<asp:TextBox ID="txtReportero" runat="server" CssClass="form-contol"></asp:TextBox>--%>
-                            <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+                            <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-contol" TextMode="MultiLine" Width="200px" Height="60px"></asp:TextBox>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblFechaInicio" runat="server" Text="Fecha Inicial:" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <dx:ASPxDateEdit ID="IDDateEventoIni" runat="server" ClientInstanceName="IDFechaI"></dx:ASPxDateEdit>
+                            <dx:ASPxTimeEdit ID="IDTimeEventoIni" runat="server" ClientInstanceName="IDTiempoI" EditFormatString="hh:mm tt"></dx:ASPxTimeEdit>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblFechaFinal" runat="server" Text="Fecha Final:" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <dx:ASPxDateEdit ID="IDDateEventoFin" runat="server" ClientInstanceName="IDFechaF"></dx:ASPxDateEdit>
+                            <dx:ASPxTimeEdit ID="IDTimeEventoFin" runat="server" ClientInstanceName="IDTiempoF" EditFormatString="hh:mm tt"></dx:ASPxTimeEdit>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <asp:Label ID="lblEstado" runat="server" Text="Estado del Evento" CssClass="control-label col-ms-2"></asp:Label>
+                        <div class="col-sm-10">
+                            <dx:ASPxComboBox ID="cbxEstadoEvento" runat="server" ValueType="System.String"></dx:ASPxComboBox>
+                        </div>
+                    </div>                    
+           
 
                     <div class="card-footer">
                         <dx:ASPxButton ID="dxBtnAgregar" 
